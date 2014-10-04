@@ -2,6 +2,11 @@ var updatePosts = function(posts) {
   var currentPosts = $('.posts');
   var currentChildren = currentPosts.children();
 
+  if (posts.length < currentChildren.length) {
+    currentPosts.empty();
+    currentChildren = currentPosts.children();
+  }
+
   for (var i = currentChildren.length; i < posts.length; i++) {
     var post = posts[i];
     var newPost = $('<div class="post">' + post.author + ': ' + post.msg + '</div>');
