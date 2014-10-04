@@ -1,9 +1,13 @@
-var updatePosts = function(post) {
+var updatePosts = function(posts) {
   var currentPosts = $('.posts');
-  var newPost = $('<div class="post">' + post.author + ': ' + post.msg + '</div>');
-  newPost.hide();
-  currentPosts.append(newPost);
-  newPost.show(400);
+
+  for (var i = 0; i < posts.length; i++) {
+    var post = posts[i];
+    var newPost = $('<div class="post">' + post.author + ': ' + post.msg + '</div>');
+    newPost.hide();
+    currentPosts.append(newPost);
+    newPost.show(400);
+  }
 };
 
 var createFormHandler = function() {
@@ -12,7 +16,20 @@ var createFormHandler = function() {
     var author = $('input.author').val();
     var msg = $('input.msg').val();
     var post = {author:author, msg:msg};
-    updatePosts(post);
+    $.ajax({
+      url: 'http://hackersberkeleyworkshop.herokuapp.com/posts',
+      type: 'POST',
+      dataType: 'json',
+      contentType: 'application/json',
+      data: JSON.stringify(post),
+    })
+    .done(function(res) {
+      console.log(res);
+      updatePosts(res);
+    })
+    .fail(function() {
+      console.log("error");
+    });
   });
 };
 
