@@ -7,22 +7,18 @@ var updatePosts = function(posts) {
     currentChildren = currentPosts.children();
   }
 
-  var newPosts = [];
   for (var i = currentChildren.length; i < posts.length; i++) {
     var post = posts[i];
     var newPost = $('<div class="post">' + post.author + ': ' + post.msg + '</div>');
     newPost.hide();
-    newPosts.push(newPost);
     currentPosts.append(newPost);
-  }
-  for (i = 0; i < newPosts.length; i++) {
-    newPosts[i].show(400);
+    newPost.show(400);
   }
 };
 
 var startPoll = function() {
   $.ajax({
-    url: '/posts',
+    url: 'http://hackersberkeleyworkshop.herokuapp.com/posts',
     type: 'GET',
     dataType: 'json',
   })
@@ -42,7 +38,7 @@ var createFormHandler = function() {
     var msg = $('input.msg').val();
     var post = {author:author, msg:msg};
     $.ajax({
-      url: '/posts',
+      url: 'http://hackersberkeleyworkshop.herokuapp.com/posts',
       type: 'POST',
       dataType: 'json',
       contentType: 'application/json',
