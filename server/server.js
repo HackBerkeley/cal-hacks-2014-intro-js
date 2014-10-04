@@ -2,7 +2,10 @@ var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-app.use(express.static(path.resolve(__dirname + '/../webapp')));
+
+if (!process.env.ON_HEROKU) {
+  app.use(express.static(path.resolve(__dirname + '/../webapp')));
+}
 app.use(express.static(path.resolve(__dirname + '/../finished')));
 
 // parse application/x-www-form-urlencoded
