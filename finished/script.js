@@ -16,7 +16,7 @@ var updatePosts = function(posts) {
     currentPosts.append(newPost);
   }
   currentPosts.appendTo($(document.body));
-  for (var i = 0; i < newPosts.length; i++) {
+  for (i = 0; i < newPosts.length; i++) {
     newPosts[i].show(400);
   }
 };

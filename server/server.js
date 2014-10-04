@@ -2,7 +2,8 @@ var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-app.use(express.static(path.resolve(__dirname + '/../playground')));
+app.use(express.static(path.resolve(__dirname + '/../webapp')));
+app.use(express.static(path.resolve(__dirname + '/../finished')));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
