@@ -10,7 +10,7 @@ var updatePosts = function(posts) {
   var newPosts = [];
   for (var i = currentChildren.length; i < posts.length; i++) {
     var post = posts[i];
-    var newPost = $('<div class="post"> Author: ' + post.author + ' Message: ' + post.msg + '</div>');
+    var newPost = $('<div class="post">' + post.author + ': ' + post.msg + '</div>');
     newPost.hide();
     newPosts.push(newPost);
     currentPosts.append(newPost);
