@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 if (!process.env.ON_HEROKU) {
-  app.use(express.static(path.resolve(__dirname + '/../webapp')));
+  app.use(express.static(path.resolve(__dirname + '/../website')));
 }
 app.use(express.static(path.resolve(__dirname + '/../finished')));
 
