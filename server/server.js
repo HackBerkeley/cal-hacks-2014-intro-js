@@ -31,6 +31,6 @@ app.get('/posts', function(req, res){
   res.status(200).json(posts).end();
 });
 
-var port = process.env.port || 3000;
+var port = process.env.PORT || 3000;
 app.listen(port);
 console.log('Server started on port:', port);
