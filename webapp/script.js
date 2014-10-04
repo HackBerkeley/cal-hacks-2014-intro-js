@@ -1,5 +1,7 @@
 var createFormHandler = function() {
-  console.log('hi');
+  $('button').on('click', function(e) {
+    console.log('hi');
+  });
 };
 
 $(document).ready(function() {
