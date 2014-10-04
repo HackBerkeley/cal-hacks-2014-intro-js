@@ -23,6 +23,7 @@ var startPoll = function() {
   .fail(function() {
     console.log("get error");
   });
+  setTimeout(startPoll, 2000);
 };
 
 
