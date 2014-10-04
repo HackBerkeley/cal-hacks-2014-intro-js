@@ -6,6 +6,8 @@ I won't be teaching HTML/CSS.
 
 **This workshop will cover a lot more ground and will be faster paced than usual**
 
+**Please go to https://github.com/HackBerkeley/cal-hacks-2014-intro-js and download the zip file. Alternately, go to https://github.com/HackBerkeley/cal-hacks-2014-intro-js/archive/master.zip**
+
 ## Prerequisites:
 
 1. **You know how to code.** This workshop is not designed to teach you how to code. Ideally you already know a high-level language like Python or Ruby.
