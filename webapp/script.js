@@ -1,6 +1,8 @@
 var createFormHandler = function() {
   $('button').on('click', function(e) {
-    console.log('hi');
+    var author = $('input.author').val();
+    var msg = $('input.msg').val();
+    debugger;
   });
 };
 
