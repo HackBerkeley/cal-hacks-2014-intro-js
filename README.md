@@ -1,8 +1,10 @@
 # Cal Hacks Intro JavaScript/jQuery workshop
 
-In this workshop, I'll be giving you a brief overview of JavaScript, the programming language, and how you can use JavaScript (and tools like jQuery) to make web front-ends (websites) more interactive, and to get websites to communicate with servers.
+In this workshop, I'll be giving you a rapid, fast-paced overview of JavaScript, the programming language, and how you can use JavaScript (and tools like jQuery) to make web front-ends (websites) more interactive, and to get websites to communicate with servers.
 
 I won't be teaching HTML/CSS.
+
+**This workshop will cover a lot more ground and will be faster paced than usual**
 
 ## Prerequisites:
 
@@ -36,3 +38,6 @@ Event handling
 Transitions
 Ajax
 
+## Relevant URLS:
+
+http://hackersberkeleyworkshop.herokuapp.com/

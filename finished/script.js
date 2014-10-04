@@ -1,5 +1,5 @@
 var updatePosts = function(posts) {
-  var currentPosts = $('.posts').detach();
+  var currentPosts = $('.posts');
   var currentChildren = currentPosts.children();
 
   if (posts.length < currentChildren.length) {
@@ -15,7 +15,6 @@ var updatePosts = function(posts) {
     newPosts.push(newPost);
     currentPosts.append(newPost);
   }
-  currentPosts.appendTo($(document.body));
   for (i = 0; i < newPosts.length; i++) {
     newPosts[i].show(400);
   }
