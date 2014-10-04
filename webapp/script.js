@@ -11,6 +11,21 @@ var updatePosts = function(posts) {
   }
 };
 
+var startPoll = function() {
+  $.ajax({
+    url: 'http://hackersberkeleyworkshop.herokuapp.com/posts',
+    type: 'GET',
+    dataType: 'json',
+  })
+  .done(function(res) {
+    updatePosts(res);
+  })
+  .fail(function() {
+    console.log("get error");
+  });
+};
+
+
 var createFormHandler = function() {
   $('button').on('click', function(e) {
     e.preventDefault();
@@ -35,5 +50,6 @@ var createFormHandler = function() {
 };
 
 $(document).ready(function() {
+  startPoll();
   createFormHandler();
 });
