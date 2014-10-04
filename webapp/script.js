@@ -1,7 +1,9 @@
 var updatePosts = function(post) {
   var currentPosts = $('.posts');
   var newPost = $('<div class="post">' + post.author + ': ' + post.msg + '</div>');
+  newPost.hide();
   currentPosts.append(newPost);
+  newPost.show(400);
 };
 
 var createFormHandler = function() {
