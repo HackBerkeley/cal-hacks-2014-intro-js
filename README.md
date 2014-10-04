@@ -1,4 +1,4 @@
-# Cal Hacks Intro JavaScript/jQuery workshop
+# Hackers @ Berkeley & Cal Hacks 2014: Intro JavaScript and jQuery
 
 In this workshop, I'll be giving you a rapid, fast-paced overview of JavaScript, the programming language, and how you can use JavaScript (and tools like jQuery) to make web front-ends (websites) more interactive, and to get websites to communicate with servers.
 
@@ -15,28 +15,28 @@ I won't be teaching HTML/CSS.
 
 ## JavaScript
 
-Var, loops
-String manipulation.
-Arrays.
-Objects.
-Array and object literals.
-Various ways of accessing (array/object).
-Functions.
-Console.log.
-Timeout/interval.
-Function chaining.
-Functions within functions.
-Closure scoping.
-Function scoping
+* Var, loops
+* String manipulation.
+* Arrays.
+* Objects.
+* Array and object literals.
+* Various ways of accessing (array/object).
+* Functions.
+* Console.log.
+* Timeout/interval.
+* Function chaining.
+* Functions within functions.
+* Closures.
+* Function scoping
 
-jQuery
-Document ready
-Selectors
-Accessors on selectors
-Modifiers (detach)
-Event handling
-Transitions
-Ajax
+* jQuery
+* Document ready
+* Selectors
+* Accessors on selectors
+* Modifiers (detach)
+* Event handling
+* Transitions
+* Ajax
 
 ## Relevant URLS:
 
