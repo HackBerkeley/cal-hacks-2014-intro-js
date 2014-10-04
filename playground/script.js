@@ -7,12 +7,18 @@ var updatePosts = function(posts) {
     currentChildren = currentPosts.children();
   }
 
+  var newPosts = [];
   for (var i = currentChildren.length; i < posts.length; i++) {
     var post = posts[i];
     var newPost = $('<div class="post"> Author: ' + post.author + ' Message: ' + post.msg + '</div>');
+    newPost.hide();
+    newPosts.push(newPost);
     currentPosts.append(newPost);
   }
   currentPosts.appendTo($(document.body));
+  for (var i = 0; i < newPosts.length; i++) {
+    newPosts[i].show(400);
+  }
 };
 
 var startPoll = function() {
